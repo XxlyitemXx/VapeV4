@@ -40,7 +40,7 @@ local function downloadFile(path, func)
 end
 
 local function finishLoading()
-    vape.init = nil
+    vape.Init = nil
     vape:Load()
     task.spawn(
         function()
