@@ -40,4 +40,4 @@ for _, folder in {"newvape", "newvape/games", "newvape/profile", "newvape/assets
         makefolder(folder)
     end
 end
-return loadstring(downloadFile("newvape/main.lua"))()
+loadstring(downloadFile("newvape/main.lua"))()
