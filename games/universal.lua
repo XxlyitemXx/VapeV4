@@ -1,7 +1,7 @@
 local loadstring = function(...)
 	local res, err = loadstring(...)
 	if err and vape then
-		vape:CreateNotification('Vape', 'Failed to load : '..err, 30, 'alert')
+		vape:CreateNotification('Katware', 'Failed to load : '..err, 30, 'alert')
 	end
 	return res
 end
@@ -152,7 +152,7 @@ local function serverHop(pointer, filter)
 		table.insert(visited, game.JobId)
 	end
 	if not pointer then
-		notif('Vape', 'Searching for an available server.', 2)
+		notif('katware', 'Searching for an available server.', 2)
 	end
 
 	local suc, httpdata = pcall(function()
